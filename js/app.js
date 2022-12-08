@@ -8,5 +8,6 @@ const ulEl = document.getElementById('todo-list')
 btnEl.addEventListener('click', function(evt) {
   const li = document.createElement('li')
   li.textContent = inpEl.value
+  inpEl.value = ''
   ulEl.appendChild(li)
 })
